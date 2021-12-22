@@ -1,0 +1,41 @@
+{% load static %}
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="{% static 'assets/css/custom.css' %}" rel="stylesheet" />
+<style type="text/css">
+body {background:none transparent;
+}
+</style>
+<div class="modal-dialog">
+        <div class="modal-content">
+           <div class="modal-header">
+               <h3><span class="tag label-warning" id="qid">2</span> <span id="qtext">3ANDKOM BHAR SEEEEEEEHBIIII?</span></h3>
+               <input type="hidden" id="fact">
+          </div>
+          <div class="modal-body">
+              <div class="col-xs-3 offset-xs-5">
+                 <div id="loadbar" class="center" style="display: none;">
+                    <div class="blockG" id="rotateG_01"></div>
+                    <div class="blockG" id="rotateG_02"></div>
+                    <div class="blockG" id="rotateG_03"></div>
+                    <div class="blockG" id="rotateG_04"></div>
+                    <div class="blockG" id="rotateG_05"></div>
+                    <div class="blockG" id="rotateG_06"></div>
+                    <div class="blockG" id="rotateG_07"></div>
+                    <div class="blockG" id="rotateG_08"></div>
+                </div>
+            </div>
+
+            <div class="quiz" id="quiz" data-toggle="buttons">
+             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">OUI</label>
+             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">NON</label>
+            </div>
+     </div>
+
+  </div>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+        var ajax_url = "{{ request.scheme }}://{{ request.META.HTTP_HOST }}/app/rest/";
+    </script>
+    <script src="{% static 'assets/js/iframe.js' %}" type="text/javascript"></script>
